@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculater", "calculater\calculater.csproj", "{918AB320-3749-4FC6-84CF-585BCAD45525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calwebappliation", "calwebappliation\calwebappliation.csproj", "{558E005F-66E2-4574-8F0A-478B5E6C3EC2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{918AB320-3749-4FC6-84CF-585BCAD45525} = {918AB320-3749-4FC6-84CF-585BCAD45525}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{918AB320-3749-4FC6-84CF-585BCAD45525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918AB320-3749-4FC6-84CF-585BCAD45525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918AB320-3749-4FC6-84CF-585BCAD45525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918AB320-3749-4FC6-84CF-585BCAD45525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{558E005F-66E2-4574-8F0A-478B5E6C3EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558E005F-66E2-4574-8F0A-478B5E6C3EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558E005F-66E2-4574-8F0A-478B5E6C3EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558E005F-66E2-4574-8F0A-478B5E6C3EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55A5C1E7-7270-4FFC-935E-09DAD514D154}
+	EndGlobalSection
+EndGlobal
