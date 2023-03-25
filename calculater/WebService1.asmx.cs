@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
@@ -17,7 +18,7 @@ namespace calculater
     public class WebService1 : System.Web.Services.WebService
     {
 
-        [WebMethod(EnableSession = true)]
+        [WebMethod(EnableSession = true ,Description="2 numbers add",CacheDuration =20) ]
         public int Add(int firstNumber, int secondNumber)
         {
             List<string> calculations;

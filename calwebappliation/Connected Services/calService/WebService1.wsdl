@@ -48,6 +48,7 @@
   </wsdl:message>
   <wsdl:portType name="WebService1Soap">
     <wsdl:operation name="Add">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">2 numbers add</wsdl:documentation>
       <wsdl:input message="tns:AddSoapIn" />
       <wsdl:output message="tns:AddSoapOut" />
     </wsdl:operation>
