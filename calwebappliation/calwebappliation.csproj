@@ -70,6 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="WebForm1.aspx" />
+    <Content Include="Connected Services\calService\calwebappliation.calService.ArrayOfString.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\calService\calwebappliation.calService.GetCalculationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\calService\WebService1.disco" />
     <None Include="Connected Services\calService\configuration91.svcinfo" />
     <None Include="Connected Services\calService\configuration.svcinfo" />

@@ -20,6 +20,10 @@ namespace calwebappliation
            int result= client.Add(Convert.ToInt32(txtFirstNumber.Text), Convert.ToInt32(txtSecondNumber.Text));
 
             lblResult.Text = result.ToString();
+
+            gvCalculation.DataSource = client.GetCalculations();
+            gvCalculation.DataBind();
+
         }
 }
 }

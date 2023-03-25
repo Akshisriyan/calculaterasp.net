@@ -17,11 +17,42 @@ namespace calculater
     public class WebService1 : System.Web.Services.WebService
     {
 
-        [WebMethod]
+        [WebMethod(EnableSession = true)]
         public int Add(int firstNumber, int secondNumber)
         {
+            List<string> calculations;
+            if (Session["calculations"] == null)
+            {
+                calculations = new List<string>();
+            }
+            else
+            {
+                calculations = (List<string>)Session["calculations"];
+            }
+
+            string strRecentCalculation = firstNumber.ToString() + " + " + secondNumber.ToString() + " = " + (firstNumber + secondNumber).ToString();
+
+            calculations.Add(strRecentCalculation);
+
+            Session["calculations"] = calculations;
+
             return firstNumber + secondNumber;
         }
-       
+
+        [WebMethod(EnableSession = true)]
+        public List<string> GetCalculations()
+        {
+            if (Session["calculations"] == null)
+            {
+                List<string> calculations = new List<string>();
+                calculations.Add("No calculations yet");
+                return calculations;
+            }
+            else
+            {
+                return (List<string>)Session["calculations"];
+            }
+        }
+
     }
 }
