@@ -24,6 +24,9 @@ namespace calwebappliation
             gvCalculation.DataSource = client.GetCalculations();
             gvCalculation.DataBind();
 
+            gvCalculation.HeaderRow.Cells[0].Text = "Recent Calculations";
+            
+
         }
 }
 }
